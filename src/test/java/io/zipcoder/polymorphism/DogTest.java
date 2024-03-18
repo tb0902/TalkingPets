@@ -8,7 +8,7 @@ public class DogTest {
   public void dogConstructorTest() {
     String name = "Kody";
 
-    Dog dog = new Cat(name, speak);
+    Dog dog = new Dog(name);
 
     String retrievedName = dog.getName();
 
@@ -18,16 +18,16 @@ public class DogTest {
 
   @Test
   public void dogIsPetTest() {
-
-    Dog dog = dog Dog(null, null);
+    String name = "Kody";
+    Dog dog = new Dog(name);
 
     Assert.assertTrue(dog instanceof Pet);
   }
 
   @Test
   public void dogSpeakTest() {
-
-    Dog dog = new Cat(null, null);
+    String name = "Kody";
+    Dog dog = new Dog(name);
 
     String actual = dog.speak();
     String expected = "Bark!";

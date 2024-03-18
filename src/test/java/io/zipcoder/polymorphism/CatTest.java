@@ -4,12 +4,11 @@ import org.junit.Test;
 
 public class CatTest {
 
-
 @Test
   public void catConstructorTest() {
   String name = "Sphinx";
 
-  Cat cat = new Cat(name, speak);
+  Cat cat = new Cat(name);
 
   String retrievedName = cat.getName();
 
@@ -19,16 +18,16 @@ public class CatTest {
 
 @Test
   public void catIsPetTest() {
-
-  Cat cat = new Cat(null, null);
+  String name = "Sphinx";
+  Cat cat = new Cat(name);
 
   Assert.assertTrue(cat instanceof Pet);
 }
 
 @Test
   public void catSpeakTest() {
-
-  Cat cat = new Cat(null, null);
+  String name = "Sphinx";
+  Cat cat = new Cat(name);
 
   String actual = cat.speak();
   String expected = "Meow!";

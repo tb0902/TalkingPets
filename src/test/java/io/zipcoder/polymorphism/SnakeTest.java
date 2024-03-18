@@ -7,7 +7,7 @@ public class SnakeTest {
   public void snakeConstructorTest() {
     String name = "Onyx";
 
-    Snake snake = new Snake(name, speak);
+    Snake snake = new Snake(name);
 
     String retrievedName = snake.getName();
 
@@ -17,16 +17,16 @@ public class SnakeTest {
 
   @Test
   public void snakeIsPetTest() {
-
-    Snake snake = new Snake();
+    String name = "Onyx";
+    Snake snake = new Snake(name);
 
     Assert.assertTrue(snake instanceof Pet);
   }
 
   @Test
   public void snakeSpeakTest() {
-
-    Snake snake = new Snake();
+    String name = "Onyx";
+    Snake snake = new Snake(name);
 
     String actual = snake.speak();
     String expected = "SsSsssS!";
